@@ -1,0 +1,33 @@
+.alumni-feedback-form {
+  color: blue;
+  font-size: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+

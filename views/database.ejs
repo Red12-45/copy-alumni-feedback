@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Database</title>
+    <link rel="stylesheet" href="css/database.css" />
+  </head>
+  <body>
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Programme</th>
+          <th>Period Of Study</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% feedback.reverse().forEach(function(message, index) { %>
+        <tr>
+          <td><%= index + 1 %></td>
+          <td><%= message.fullName %></td>
+          <td><%= message.programme %></td>
+          <td><%= message.periodOfStudy %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

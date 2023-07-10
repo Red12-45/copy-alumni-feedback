@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alumni Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="css/Alumini.css" />
+  </head>
+  <body>
+    <a href="/login" action="/login" method="POST">
+      <h1 class="alumni-feedback-form">Alumni Feedback Form</h1></a
+    >
+    <form action="/feedback" method="POST">
+      <label for="fullName">Full Name:</label>
+      <input
+        autocomplete="off"
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="John Wick"
+        required
+      /><br />
+
+      <label for="programme">Programme:</label>
+      <input
+        autocomplete="off"
+        type="text"
+        id="programme"
+        name="programme"
+        placeholder="B.SC(Physics)"
+        required
+      /><br />
+
+      <label for="periodOfStudy">Period of Study:</label>
+      <input
+        autocomplete="off"
+        type="text"
+        id="periodOfStudy"
+        name="periodOfStudy"
+        placeholder="eg: 2015-2018"
+        required
+      /><br />
+
+      <div style="text-align: center">
+        <table>
+          <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>Excellent</td>
+            <td>Good</td>
+            <td>Poor</td>
+            <td>Very Poor</td>
+          </tr>
+        </table>
+      </div>
+
+      <table id="my-table">
+        <thead>
+          <tr class="d">
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Career Preparation</td>
+            <td><input type="radio" name="careerPreparation" value="1" /></td>
+            <td><input type="radio" name="careerPreparation" value="2" /></td>
+            <td><input type="radio" name="careerPreparation" value="3" /></td>
+            <td><input type="radio" name="careerPreparation" value="4" /></td>
+          </tr>
+
+          <tr>
+            <td>Campus Culture</td>
+            <td><input type="radio" name="campusCulture" value="1" /></td>
+            <td><input type="radio" name="campusCulture" value="2" /></td>
+            <td><input type="radio" name="campusCulture" value="3" /></td>
+            <td><input type="radio" name="campusCulture" value="4" /></td>
+          </tr>
+
+          <tr>
+            <td>Campus Resources</td>
+            <td><input type="radio" name="campusResources" value="1" /></td>
+            <td><input type="radio" name="campusResources" value="2" /></td>
+            <td><input type="radio" name="campusResources" value="3" /></td>
+            <td><input type="radio" name="campusResources" value="4" /></td>
+          </tr>
+
+          <tr>
+            <td>Alumni Engagement</td>
+            <td><input type="radio" name="alumniEngagement" value="1" /></td>
+            <td><input type="radio" name="alumniEngagement" value="2" /></td>
+            <td><input type="radio" name="alumniEngagement" value="3" /></td>
+            <td><input type="radio" name="alumniEngagement" value="4" /></td>
+          </tr>
+
+          <tr>
+            <td>Diversity and Inclusion</td>
+            <td>
+              <input type="radio" name="diversityAndInclusion" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="diversityAndInclusion" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="diversityAndInclusion" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="diversityAndInclusion" value="4" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Campus Facilities</td>
+            <td><input type="radio" name="campusFacilities" value="1" /></td>
+            <td><input type="radio" name="campusFacilities" value="2" /></td>
+            <td><input type="radio" name="campusFacilities" value="3" /></td>
+            <td><input type="radio" name="campusFacilities" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Campus safety</td>
+            <td><input type="radio" name="campusSafety" value="1" /></td>
+            <td><input type="radio" name="campusSafety" value="2" /></td>
+            <td><input type="radio" name="campusSafety" value="3" /></td>
+            <td><input type="radio" name="campusSafety" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Academic Support</td>
+            <td><input type="radio" name="academicSupport" value="1" /></td>
+            <td><input type="radio" name="academicSupport" value="2" /></td>
+            <td><input type="radio" name="academicSupport" value="3" /></td>
+            <td><input type="radio" name="academicSupport" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Student-Faculty Interaction</td>
+            <td>
+              <input type="radio" name="studentFacultyInteraction" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="studentFacultyInteraction" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="studentFacultyInteraction" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="studentFacultyInteraction" value="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>Technology Resources</td>
+            <td><input type="radio" name="technologyResources" value="1" /></td>
+            <td><input type="radio" name="technologyResources" value="2" /></td>
+            <td><input type="radio" name="technologyResources" value="3" /></td>
+            <td><input type="radio" name="technologyResources" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Financial Aid and Affordability</td>
+            <td>
+              <input
+                type="radio"
+                name="financialAidAndAffordability"
+                value="1"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="financialAidAndAffordability"
+                value="2"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="financialAidAndAffordability"
+                value="3"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="financialAidAndAffordability"
+                value="4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Graduate School Preparation</td>
+            <td>
+              <input type="radio" name="graduateSchoolPreparation" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="graduateSchoolPreparation" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="graduateSchoolPreparation" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="graduateSchoolPreparation" value="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>Alumni Network</td>
+            <td><input type="radio" name="alumniNetwork" value="1" /></td>
+            <td><input type="radio" name="alumniNetwork" value="2" /></td>
+            <td><input type="radio" name="alumniNetwork" value="3" /></td>
+            <td><input type="radio" name="alumniNetwork" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Internship Opportunities</td>
+            <td>
+              <input type="radio" name="internshipOpportunities" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="internshipOpportunities" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="internshipOpportunities" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="internshipOpportunities" value="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>Extracurricular Opportunities</td>
+            <td>
+              <input
+                type="radio"
+                name="extracurricularOpportunities"
+                value="1"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="extracurricularOpportunities"
+                value="2"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="extracurricularOpportunities"
+                value="3"
+              />
+            </td>
+            <td>
+              <input
+                type="radio"
+                name="extracurricularOpportunities"
+                value="4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Distance Learning Options</td>
+            <td>
+              <input type="radio" name="distanceLearningOptions" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="distanceLearningOptions" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="distanceLearningOptions" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="distanceLearningOptions" value="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>Campus Sustainability</td>
+            <td>
+              <input type="radio" name="campusSustainability" value="1" />
+            </td>
+            <td>
+              <input type="radio" name="campusSustainability" value="2" />
+            </td>
+            <td>
+              <input type="radio" name="campusSustainability" value="3" />
+            </td>
+            <td>
+              <input type="radio" name="campusSustainability" value="4" />
+            </td>
+          </tr>
+          <tr>
+            <td>Global Perspective</td>
+            <td><input type="radio" name="globalPerspective" value="1" /></td>
+            <td><input type="radio" name="globalPerspective" value="2" /></td>
+            <td><input type="radio" name="globalPerspective" value="3" /></td>
+            <td><input type="radio" name="globalPerspective" value="4" /></td>
+          </tr>
+          <tr>
+            <td>Overall Rating</td>
+            <td><input type="radio" name="overallSatisfaction" value="1" /></td>
+            <td><input type="radio" name="overallSatisfaction" value="2" /></td>
+            <td><input type="radio" name="overallSatisfaction" value="3" /></td>
+            <td><input type="radio" name="overallSatisfaction" value="4" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <button type="submit" name="b1">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1.alumni-feedback-form {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #0077b6;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.6);
+}
+
+table {
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  font-size: 19px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077b6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #005073;
+}
+
+@media only screen and (max-width: 1500px) {
+  form {
+    padding: 80px;
+  }
+
+  h1.alumni-feedback-form {
+    font-size: 60px;
+  }
+
+  button[type="submit"] {
+    font-size: 20px;
+    padding: 22px 30px;
+  }
+  label {
+    font-size: 35px;
+  }
+  table th,
+  table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 23px;
+  }
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 26px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+td input[type="radio"] {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  margin: 30px auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  animation-name: formAnimation;
+  animation-duration: 2s;
+}
+
+/* Form animation */
+@keyframes formAnimation {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
